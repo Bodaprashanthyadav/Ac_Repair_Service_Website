@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert AC Repair & Maintenance | Non-Warranty AC Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+    <style>
+        :root {
+            --primary-color: #0077cc;
+            --secondary-color: #004f8a;
+            --accent-color: #ff6b00;
+            --light-gray: #f8f9fa;
+            --dark-gray: #333333;
+            --text-color: #333333;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .header-container a {
+            text-decoration-line: none;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-left: 2rem;
+            color: var(--primary-color);
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        .contact-header {
+            display: flex;
+            gap: 15px;
+        }
+
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin-left: 9rem;
+
+        }
+
+        .nav-links a {
+            color: var(--primary-color);
+            font-weight: 650;
+            margin-inline: 1.5rem;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            bottom: -5px;
+            left: 0px;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            padding: 8px 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .phone-btn {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: var(--white);
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+
+        }
+
+        .btn:hover {
+            background-color: #e25a00;
+        }
+
+        .btn-secondary {
+            background-color: var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 77, 128, 0.8), rgba(0, 77, 128, 0.9)), url('/api/placeholder/1200/600') center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        /* Why Choose Us Section */
+        .why-us {
+            background-color: var(--light-gray);
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            text-align: center;
+
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .feature {
+            flex: 1 1 200px;
+            max-width: 300px;
+            background-color: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        /* Services Section */
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            border: 1px solid rgb(194, 193, 193);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-img {
+            height: 200px;
+            background-color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--primary-color);
+
+        }
+
+        .service-img img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .service-content {
+            padding: 20px;
+
+        }
+
+        .service-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 1.1rem;
+
+        }
+
+
+        .service-content p {
+            margin-bottom: 15px;
+            min-height: 80px;
+            font-size: 0.8rem;
+
+        }
+
+        .service-content a {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        /* Process Section */
+        .process {
+            background-color: var(--light-gray);
+        }
+
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            counter-reset: step-counter;
+            margin-top: 40px;
+        }
+
+        .process-step {
+            flex: 1 1 220px;
+            max-width: 250px;
+            text-align: center;
+            position: relative;
+        }
+
+        .process-step::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            background-color: var(--primary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-weight: bold;
+        }
+
+        .process-step:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            right: -50%;
+            width: 95%;
+            height: 2px;
+            background-color: var(--primary-color);
+            z-index: 0;
+        }
+
+        .step-icon {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .process-step h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: var(--white);
+        }
+
+        .testimonials-slider {
+            margin-top: 40px;
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding-bottom: 20px;
+            scrollbar-width: none;
+        }
+
+        .testimonial {
+            flex: 0 0 350px;
+            background-color: var(--light-gray);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .testimonial-text {
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-weight: bold;
+        }
+
+        .author-details h4 {
+            margin-bottom: 5px;
+        }
+
+        .stars {
+            color: #FFD700;
+        }
+
+        /* Service Areas */
+        .service-areas {
+            background-color: var(--light-gray);
+        }
+
+        .areas-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .area-tag {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .map-container {
+            margin-top: 30px;
+            height: 300px;
+            background-color: #eee;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark-gray);
+        }
+
+
+        .special-offer {
+            background-color: var(--accent-color);
+            color: var(--white);
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background-color: var(--white);
+        }
+
+        .faq-container {
+            margin-top: 40px;
+            max-width: 800px;
+            margin: 40px auto 0;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            border: 1px solid #e1e1e1;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background-color: var(--light-gray);
+            padding: 15px 20px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: "+";
+            font-size: 1.5rem;
+        }
+
+        .faq-answer {
+            padding: 15px 20px;
+            border-top: 1px solid #e1e1e1;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+        }
+
+        .contact-form {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-gray);
+            color: var(--white);
+            padding: 40px 0 20px;
+        }
+       .grid{
+    
+        display: grid;
+            grid-template-columns: repeat(4, auto);
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 2rem;
+            
+            font-size: 1rem;
+      
+       }
+        .footer-content {
+         margin-inline: 10px;
+             
+        }
+        .footer-title {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 1rem;
+    color: var(--light-gray);
+    text-align: center; 
+}
+
+.footer-title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--secondary-color);
+    margin: 5px auto 0; /* Auto centers the line */
+}
+
+
+        .footer-links {
+            list-style-type: none;
+            white-space: nowrap;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: var(--light-gray);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+        .contact-info{
+            display: flex;
+            flex-flow: nowrap;
+           line-height: 2rem;
+            
+        }
+        .contact-icon{
+            font-size: 1rem;
+        }
+        .contact-info p{
+            margin-left: -10px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+           border-bottom: 1px solid;
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-link:hover {
+            background-color: var(--accent-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color:darkgray;
+        }
+       
+        
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .process-step:not(:last-child)::after {
+                display: none;
+            }
+
+            .process-steps {
+                gap: 30px;
+                display: flex;
+                justify-content: center;
+            }
+            
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+        /* footer secton media Queries */
+        /* Media Query for tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .footer-content {
+        margin-inline: auto;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info p {
+        margin-left: 0;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Media Query for mobile devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+        text-align: center;
+    }
+    .nav-links{
+        margin: auto;
+    }
+
+    .footer-content {
+        margin-inline: auto;
+    }
+
+    .footer-title::after {
+        margin: 0 auto;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .social-link {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Media Query for smaller mobile screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .footer-title {
+        font-size: 1.2rem;
+    }
+
+    .footer-links li {
+        margin-bottom: 8px;
+    }
+
+    .social-link {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+
+            <div class="logo">Chill<span>Fix</span></div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#aboutUs">About Us</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>
+                </ul>
+            </nav>
+            <div class="contact-header">
+                <a href="tel:+911234567890" class="contact-btn phone-btn">📞 Call Now</a>
+                <a href="https://wa.me/911234567890" class="contact-btn whatsapp-btn">💬 WhatsApp</a>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Expert AC Repair & Maintenance – Fast, Reliable, and Affordable!</h1>
+            <p>Specializing in non-warranty AC services with certified technicians and same-day service.</p>
+            <a href="#booking" class="btn">Book Your Service Now</a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <p class="section-subtitle">Our commitment to excellence makes us the preferred choice for AC services</p>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">👨‍🔧</div>
+                    <h3>Certified Technicians</h3>
+                    <p>Our team consists of highly skilled and certified professionals with years of experience.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⏱️</div>
+                    <h3>Same-Day Service</h3>
+                    <p>We understand the urgency and provide prompt same-day service to minimize your discomfort.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💰</div>
+                    <h3>Transparent Pricing</h3>
+                    <p>No hidden charges! We provide clear upfront pricing before starting any work.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">✅</div>
+                    <h3>Satisfaction Guarantee</h3>
+                    <p>We're not satisfied until you are. Our work comes with a 100% satisfaction guarantee.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔧</div>
+                    <h3>All AC Brands</h3>
+                    <p>We service all major AC brands and models, regardless of where you purchased it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Comprehensive AC solutions tailored to your specific needs</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <figure class="service-img">
+                        <img src="https://th.bing.com/th/id/OIP.KIZyFbNVIlvn41MHrMC1bgHaE8?w=281&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                            alt="Ac Repair Service">
+                    </figure>
+                    <div class="service-content">
+                        <h3>AC Repair Services</h3>
+                        <p>Expert diagnosis and fixing of all cooling issues, motor problems, and PCB repairs for all
+                            types of ACs.Get fast, reliable, and long-lasting solutions for optimal cooling comfort!</p>
+                        <a href="#booking" class="btn btn-secondary">Request Service</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <figure class="service-img">
+                        <img src="https://img.freepik.com/free-photo/team-replacing-old-air-conditioner_482257-78499.jpg?ga=GA1.1.1518098917.1734029950&semt=ais_hybrid"
+                            alt="Ac_install&unistall">
+
+                    </figure>
+                    <div class="service-content">
+                        <h3>AC Installation & Uninstallation</h3>
+                        <p>We provide safe and professional AC installation, removal, and relocation services. Ensure
+                            hassle-free setup with expert handling and care! </p>
+                        <a href="#booking" class="btn btn-secondary">Request Service</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <figure class="service-img">
+                        <img src="https://th.bing.com/th/id/OIP.VLtixNwyBuSSWdtvT40HDgHaE8?w=223&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                            alt="Ac_Maintenance&Cleaning">
+                    </figure>
+                    <div class="service-content">
+                        <h3>AC Maintenance & Cleaning</h3>
+                        <p>Get regular servicing, filter cleaning, and coil maintenance for peak performance. Keep your
+                            AC running efficiently and extend its lifespan! .</p>
+                        <a href="#booking" class="btn btn-secondary">Request Service</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <figure class="service-img">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2021/3/FH/HP/VE/60213661/ac-gas-refilling-services-500x500.jpg"
+                            alt="Ac Gas Refilling">
+                    </figure>
+                    <div class="service-content">
+                        <h3>AC Gas Refilling</h3>
+                        <p>Expert leak detection and refrigerant refilling to restore optimal cooling. Keep your AC
+                            running efficiently with our professional service!</p>
+                        <a href="#booking" class="btn btn-secondary">Request Service</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <figure class="service-img">
+                        <img src="https://img.freepik.com/free-photo/hvac-engineer-dusting-blower-fan_482257-90845.jpg?ga=GA1.1.1518098917.1734029950&semt=ais_hybrid"
+                            alt="Emergency services">
+                    </figure>
+                    <div class="service-content">
+                        <h3>Emergency Services</h3>
+                        <p>Fast and reliable repairs for urgent AC issues with quick response times. Stay cool with our
+                            prompt expert assistance!</p>
+                        <a href="#booking" class="btn btn-secondary">Request Service</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <figure class="service-img">
+                        <img src="https://th.bing.com/th/id/OIP.ge3phZhmTPRSTPz_NF98zQHaE8?w=1000&h=667&rs=1&pid=ImgDetMain"
+                            alt="Ac health check">
+                    </figure>
+                    <div class="service-content">
+                        <h3>AC Health Check</h3>
+                        <p>Comprehensive diagnostic service to identify potential issues before they become major
+                            problems.Stay worry-free with proactive maintenance for long-lasting comfort!</p>
+                        <a href="#booking" class="btn btn-secondary">Request Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Our simple and efficient service process</p>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-icon">📞</div>
+                    <h3>Book Service</h3>
+                    <p>Schedule your service online or call our hotline for immediate assistance.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">👨‍🔧</div>
+                    <h3>Diagnosis</h3>
+                    <p>Our technician arrives to diagnose the issue and provide a transparent cost estimate.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">🛠️</div>
+                    <h3>Service/Repair</h3>
+                    <p>Expert technicians complete the required service or repair on-site.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon">💳</div>
+                    <h3>Payment</h3>
+                    <p>Pay only after service completion and your complete satisfaction.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <p style="font-weight: bold; font-size: 1.2rem; color: var(--accent-color);">⚠️ No Hidden Charges! ⚠️
+                </p>
+                <p>We provide transparent pricing with no surprise fees.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonial">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-subtitle">Don't just take our word for it - see what our satisfied customers have to say
+            </p>
+
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Excellent AC service! The technician was professional, and my AC works
+                        perfectly now. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-details">
+                            <h4>Rajesh Kumar</h4>
+                            <p>Satisfied Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Fast service and reasonable prices. My AC wasn't cooling properly, and
+                        they fixed it in just one visit. Great job!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SP</div>
+                        <div class="author-details">
+                            <h4>Sunita Patel</h4>
+                            <p>Repeat Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Very professional and knowledgeable team. They explained the issues
+                        clearly and fixed my AC problem at a reasonable cost."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AM</div>
+                        <div class="author-details">
+                            <h4>Ankit Mehta</h4>
+                            <p>New Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Same-day service as promised! Technician was punctual, courteous, and
+                        skilled. My AC is cooling better than ever."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PG</div>
+                        <div class="author-details">
+                            <h4>Priya Gupta</h4>
+                            <p>Happy Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="service-areas">
+        <div class="container">
+            <h2 class="section-title">Areas We Serve</h2>
+            <p class="section-subtitle">We provide doorstep AC services in the following locations</p>
+
+            <div class="areas-list">
+                <span class="area-tag">North Delhi</span>
+                <span class="area-tag">South Delhi</span>
+                <span class="area-tag">East Delhi</span>
+                <span class="area-tag">West Delhi</span>
+                <span class="area-tag">Central Delhi</span>
+                <span class="area-tag">Noida</span>
+                <span class="area-tag">Gurgaon</span>
+                <span class="area-tag">Faridabad</span>
+                <span class="area-tag">Ghaziabad</span>
+                <span class="area-tag">Greater Noida</span>
+            </div>
+
+            <div class="map-container">
+                <!-- <p>Interactive Service Area Map</p> -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.0738331032126!2d77.27591422528887!3d28.62754917566743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce35319b6a7ff%3A0x127dca80423ad527!2sLaxmi%20Nagar%2C%20Block%20S1%2C%20Nanakpura%2C%20Shakarpur%2C%20Delhi%2C%20110092!5e0!3m2!1sen!2sin!4v1742333197547!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div style="text-align: center; margin-top: 20px;">
+                <div style="max-width: 400px; margin: 0 auto;">
+                    <div class="form-group">
+                        <input type="text" class="form-control"
+                            placeholder="Enter your area to check service availability...">
+                    </div>
+                    <button class="btn">Check Availability</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Footer -->
+ <footer id="contact" class="footer">
+    <div class="container">
+        <div class="grid">
+            <div class="footer-content">
+                <h3 class="footer-title">ChillFix</h3>
+                <p>ChillFix offers fast, reliable, and affordable AC repair and maintenance by experienced professionals, ensuring your cooling system runs efficiently.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                </div>
+            </div>
+            <div class="footer-content"  >
+                <h3 class="footer-title">Useful Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>
+                    <li><a href="#Privacy Policy">Privacy Policy</a></li>
+                    <li><a href="#Terms and conditions">Terms and conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-content" >
+                <h3 class="footer-title">Our Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">AC Repair Services</a></li>
+                    <li><a href="#">AC Installation & Uninstallation</a></li>
+                    <li><a href="#">AC Maintenance & Cleaning</a></li>
+                    <li><a href="#">AC Gas Refilling</a></li>
+                    <li><a href="#">AC Health Check</a></li>
+                    <li><a href="#">Emergency Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-content"  >
+                <h3 class="footer-title">Contact Us</h3>
+                <div class="contact-info">
+                    <span class="contact-icon"><i class="bi bi-telephone"></i></span>
+                    <p> +91-8800860478</p>
+                </div>
+                <div class="contact-info">
+                    <span class="contact-icon"><i class="bi bi-envelope ft-2"></i></span>
+                    <p>info@chillfix.com</p>
+                </div>
+                <div class="contact-info">
+                       <span class="contact-icon"><i class="bi bi-geo-alt"></i></span>
+                        <p>Laxmi Nagar
+                            Block S1, Nanakpura, Shakarpur, Delhi, 110092 India</p>
+                </div>
+            </div>
+        </div>
+
+        <div >
+            <div class="copyright">
+                <p>&copy; 2025 Air Condition Services. All Rights Reserved</p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+    </body>
+    </html>
