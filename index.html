@@ -739,6 +739,7 @@
 
 /* Media Query for mobile devices (max-width: 768px) */
 @media screen and (max-width: 768px) {
+    
     .grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 1.5rem;
@@ -773,7 +774,8 @@
   /* header and footer mediQueries */
 /* Media Query for smaller mobile screens (max-width: 480px) */
 @media screen and (max-width: 480px) {
-    
+
+   
     .nav-links{
         font-size: medium;
     }
@@ -791,7 +793,7 @@
     .swiper-button-prev::after {
         font-size: 1rem !important; 
     }
-}
+
     
     .grid {
         grid-template-columns: repeat(1, 1fr);
@@ -817,6 +819,25 @@
     }
 }
 
+/* .header-headline */
+@media (max-width:768px) {
+    .header-headline{
+        display: block;
+        font-size: 1.5rem;
+        margin: -1rem 0 -1rem;
+       margin-left: 1rem;
+       color: var(--text-color);
+       font-weight: 500;
+    }
+    
+}
+
+@media (min-width:768px) {
+    .header-headline{
+     display: none;
+    }
+}
+     
     </style>
 </head>
 
@@ -826,6 +847,7 @@
         <div class="container header-container">
 
             <a href="#" class="logo">Chill<span>Fix</span></a>
+            <p class="header-headline">AC Service Centre</p>
             <nav class="navbar">
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
@@ -847,7 +869,7 @@
     <section class="hero" id="home">
         <div class="container">
             <h1>Expert AC Repair & Maintenance – Fast, Reliable, and Affordable!</h1>
-            <p>Specializing in non-warranty AC services with certified technicians and same-day service.</p>
+            <p>Specializing in AC services with certified technicians and same-day service.</p>
             <a href="#booking" class="btn">Book Your Service Now</a>
         </div>
     </section>
@@ -1154,7 +1176,7 @@
                 <h3 class="footer-title">Contact Us</h3>
                 <div class="contact-info">
                     <span class="contact-icon"><i class="bi bi-telephone"></i></span>
-                    <p> +91-8800860478</p>
+                    <p> +91-7982127785</p>
                 </div>
                 <div class="contact-info">
                     <span class="contact-icon"><i class="bi bi-envelope ft-2"></i></span>
