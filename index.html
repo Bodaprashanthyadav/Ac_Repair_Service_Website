@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expert AC Repair & Maintenance | Non-Warranty AC Services</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
 
 </head>
     <style>
@@ -359,26 +363,29 @@
         }
 
         /* Testimonials Section */
+
         .testimonials {
             background-color: var(--white);
         }
 
         .testimonials-slider {
-            margin-top: 40px;
-            display: flex;
-            gap: 20px;
-            overflow-x: auto;
-            padding-bottom: 20px;
-            scrollbar-width: none;
-        }
+    padding-bottom: 50px;
+}
 
-        .testimonial {
-            flex: 0 0 350px;
-            background-color: var(--light-gray);
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-        }
+.testimonials-slider {
+    padding-bottom: 50px;
+}
+
+.testimonial {
+    background-color: var(--light-gray);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: center;
+}
+
+        
 
         .testimonial-text {
             margin-bottom: 15px;
@@ -387,7 +394,8 @@
 
         .testimonial-author {
             display: flex;
-            align-items: center;
+            justify-content: center;
+
         }
 
         .author-avatar {
@@ -411,6 +419,15 @@
             color: #FFD700;
         }
 
+        .swiper-button-next,
+.swiper-button-prev {
+    
+    color: var(--primary-color);
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--primary-color);
+}
         /* Service Areas */
         .service-areas {
             background-color: var(--light-gray);
@@ -976,66 +993,72 @@
             </div>
         </div>
     </section>
-
-    <!-- Testimonials Section -->
     <section class="testimonials" id="testimonial">
         <div class="container">
             <h2 class="section-title">What Our Customers Say</h2>
-            <p class="section-subtitle">Don't just take our word for it - see what our satisfied customers have to say
-            </p>
-
-            <div class="testimonials-slider">
-                <div class="testimonial">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">"Excellent AC service! The technician was professional, and my AC works
-                        perfectly now. Highly recommended!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">RK</div>
-                        <div class="author-details">
-                            <h4>Rajesh Kumar</h4>
-                            <p>Satisfied Customer</p>
+            <p class="section-subtitle">Don't just take our word for it - see what our satisfied customers have to say</p>
+    
+            <!-- Swiper Container -->
+            <div class="swiper testimonials-slider">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Excellent AC service! The technician was professional, and my AC works perfectly now. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">RK</div>
+                            <div class="author-details">
+                                <h4>Rajesh Kumar</h4>
+                                <p>Satisfied Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Fast service and reasonable prices. My AC wasn't cooling properly, and they fixed it in just one visit. Great job!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SP</div>
+                            <div class="author-details">
+                                <h4>Sunita Patel</h4>
+                                <p>Repeat Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Very professional and knowledgeable team. They explained the issues clearly and fixed my AC problem at a reasonable cost."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">AM</div>
+                            <div class="author-details">
+                                <h4>Ankit Mehta</h4>
+                                <p>New Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 4 -->
+                    <div class="swiper-slide testimonial">
+                        <div class="stars">★★★★★</div>
+                        <p class="testimonial-text">"Same-day service as promised! Technician was punctual, courteous, and skilled. My AC is cooling better than ever."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">PG</div>
+                            <div class="author-details">
+                                <h4>Priya Gupta</h4>
+                                <p>Happy Customer</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">"Fast service and reasonable prices. My AC wasn't cooling properly, and
-                        they fixed it in just one visit. Great job!"</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">SP</div>
-                        <div class="author-details">
-                            <h4>Sunita Patel</h4>
-                            <p>Repeat Customer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">"Very professional and knowledgeable team. They explained the issues
-                        clearly and fixed my AC problem at a reasonable cost."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">AM</div>
-                        <div class="author-details">
-                            <h4>Ankit Mehta</h4>
-                            <p>New Customer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">"Same-day service as promised! Technician was punctual, courteous, and
-                        skilled. My AC is cooling better than ever."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">PG</div>
-                        <div class="author-details">
-                            <h4>Priya Gupta</h4>
-                            <p>Happy Customer</p>
-                        </div>
-                    </div>
-                </div>
+    
+                <!-- Swiper Pagination & Navigation -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
+    
 
     <!-- Service Areas Section -->
     <section class="service-areas">
@@ -1138,5 +1161,31 @@
         </div>
     </div>
 </footer>
+
+
+<script>
+    var swiper = new Swiper(".testimonials-slider", {
+        slidesPerView: 1,   // Show 1 slide at a time
+        spaceBetween: 20,   // Space between slides
+        loop: true,         // Infinite loop
+        autoplay: {
+            delay: 3000,    // Change slide every 3 seconds
+            disableOnInteraction: false
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+        breakpoints: {
+            768: { slidesPerView: 2 }, // Show 2 slides on tablets
+            1024: { slidesPerView: 3 } // Show 3 slides on larger screens
+        }
+    });
+</script>
+
     </body>
     </html>
