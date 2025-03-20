@@ -33,7 +33,7 @@
 
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 6rem;
+            scroll-padding-top: 8rem;
         }
 
         body {
@@ -142,6 +142,7 @@
 
         section {
             padding: 60px 0;
+            
         }
 
         .btn {
@@ -765,9 +766,9 @@
     }
 }
   /* header and footer mediQueries */
-/* Media Query for smaller mobile screens (max-width: 480px) */
+/* Media Query for smaller mobile screens (max-width: 580px) */
 @media screen and (max-width: 580px) {
-
+        
    
     .nav-links{
         font-size: medium;
@@ -839,7 +840,7 @@
     <header>
         <div class="container header-container">
 
-            <a href="#" class="logo">Chill<span>Fix</span></a>
+            <a href="#home" class="logo">Chill<span>Fix</span></a>
             <p class="header-headline">AC Service Centre</p>
             <nav class="navbar">
                 <ul class="nav-links">
@@ -906,7 +907,7 @@
     
        <!-- Services Section -->
 
-       <section class="services">
+       <section class="services" id="services">
         <div class="container">
             <h2 class="section-title">Our Services</h2>
             <p class="section-subtitle">Comprehensive AC solutions tailored to your specific needs</p>
@@ -916,8 +917,8 @@
                     <div class="service-img">🔧</div>
                     <div class="service-content">
                         <h3>AC Repair Services</h3>
-    <p>Expert diagnosis and fixing of all cooling issues, motor problems, and PCB repairs for all
-        types of ACs.Get fast, reliable, and long-lasting solutions for optimal cooling comfort!</p>
+                      <p>Expert diagnosis and fixing of all cooling issues, motor problems, and PCB repairs for all
+                               types of ACs.Get fast, reliable, and long-lasting solutions for optimal cooling comfort!</p>
                         <a href="#booking" class="btn btn-secondary">Request Service</a>
                     </div>
                 </div>
@@ -930,7 +931,7 @@
                         <a href="#booking" class="btn btn-secondary">Request Service</a>
                     </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card" id="services">
                     <div class="service-img">🧹</div>
                     <div class="service-content">
                         <h3>AC Maintenance & Cleaning</h3>
@@ -1075,7 +1076,7 @@
     
 
     <!-- Service Areas Section -->
-    <section class="service-areas">
+    <section class="service-areas" >
         <div class="container">
             <h2 class="section-title">Areas We Serve</h2>
             <p class="section-subtitle">We provide doorstep AC services in the following locations</p>
