@@ -5,835 +5,916 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best AC Repair & Maintenance Services | Fast & Reliable Air Conditioning Fix</title>
-    
-    <meta name="description" content="Get expert AC repair and maintenance services for all types of air conditioners. Fast, reliable, and affordable air conditioning solutions for homes & offices.">    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <meta name="description"
+        content="Get expert AC repair and maintenance services for all types of air conditioners. Fast, reliable, and affordable air conditioning solutions for homes & offices.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <!-- Swiper.js CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 
 </head>
-    <style>
-        :root {
-            --primary-color: #0077cc;
-            --secondary-color: #004f8a;
-            --accent-color: #ff6b00;
-            --light-gray: #f8f9fa;
-            --dark-gray: #333333;
-            --text-color: #333333;
-            --white: #ffffff;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 8rem;
-        }
-
-        body {
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        header {
-            background-color: var(--white);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-        }
-
-        .header-container a {
-            text-decoration-line: none;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-left: 2rem;
-            color: var(--primary-color);
-        }
-
-        .logo span {
-            color: var(--accent-color);
-        }
-
-        .contact-header {
-            display: flex;
-            gap: 15px;
-        }
-
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            margin-left: 8rem;
-            font-size: 1.4rem;
-           
-
-        }
-
-        .nav-links a {
-            color: var(--primary-color);
-            font-weight: 650;
-            margin-inline: 1rem;
-            position: relative;
-        }
-       
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background: var(--primary-color);
-            bottom: -5px;
-            left: 0px;
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-
-        }
-
-        .nav-links a:hover {
-            color: var(--accent-color);
-        }
-
-        .contact-btn {
-            display: flex;
-            align-items: center;
-            padding: 8px 15px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-
-        .phone-btn {
-            background-color: var(--primary-color);
-            color: var(--white);
-        }
-
-        .whatsapp-btn {
-            background-color: #25D366;
-            color: var(--white);
-        }
-
-        section {
-            padding: 60px 0;
-            
-            
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: var(--white);
-            padding: 10px 20px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
-
-        }
-
-        .btn:hover {
-            background-color: #e25a00;
-        }
-
-        .btn-secondary {
-            background-color: var(--primary-color);
-        }
-
-        .btn-secondary:hover {
-            background-color: var(--secondary-color);
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0, 77, 128, 0.8), rgba(0, 77, 128, 0.9)), url('/api/placeholder/1200/600') center/cover;
-            color: var(--white);
-            text-align: center;
-            padding: 80px 0;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto 30px;
-        }
-
-        /* Why Choose Us Section */
-        .why-us {
-            background-color: var(--light-gray);
-            text-align: center;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 15px;
-            color: var(--primary-color);
-        }
-
-        .section-subtitle {
-            font-size: 1.1rem;
-            margin-bottom: 40px;
-            text-align: center;
-
-        }
-
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .feature {
-            flex: 1 1 200px;
-            max-width: 300px;
-            background-color: var(--white);
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .feature:hover {
-            transform: translateY(-5px);
-        }
-
-        .feature-icon {
-            font-size: 2.5rem;
-            color: var(--accent-color);
-            margin-bottom: 15px;
-        }
-
-        .feature h3 {
-            margin-bottom: 10px;
-            color: var(--primary-color);
-        }
-
-        /* Services Section */
-
-       .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-top: 40px;
-        }
-        
-        .service-card {
-            border: 1px solid #e1e1e1;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        .service-img {
-            height: 150px;
-            background-color: var(--light-gray);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            color: var(--primary-color);
-        }
-        
-        .service-content {
-            padding: 20px;
-            text-align: center;
-
-        }
-        
-        .service-content h3 {
-            color: var(--primary-color);
-            margin-bottom: 10px;
-        }
-        
-        .service-content p {
-            margin-bottom: 15px;
-            min-height: 80px;
-        }
-        .service-content a{
-            display: flex;
-            justify-content: center;
-        }
-
-        /* Process Section */
-        .process {
-            background-color: var(--light-gray);
-        }
-
-        .process-steps {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            counter-reset: step-counter;
-            margin-top: 40px;
-        }
-
-        .process-step {
-            flex: 1 1 220px;
-            max-width: 250px;
-            text-align: center;
-            position: relative;
-        }
-
-        .process-step::before {
-            counter-increment: step-counter;
-            content: counter(step-counter);
-            background-color: var(--primary-color);
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 15px;
-            font-weight: bold;
-        }
-
-        .process-step:not(:last-child)::after {
-            content: "";
-            position: absolute;
-            top: 20px;
-            right: -62%;
-            width: 110%;
-            height: 2px;
-            background-color: var(--primary-color);
-            z-index: 0;
-        }
-
-        .step-icon {
-            font-size: 2rem;
-            color: var(--accent-color);
-            margin-bottom: 15px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .process-step h3 {
-            margin-bottom: 10px;
-            color: var(--primary-color);
-        }
-
-        /* Testimonials Section */
-
-        .testimonials {
-            background-color: var(--white);
-        }
-
-        .testimonials-slider {
-    padding-bottom: 50px;
-}
-
-.testimonials-slider {
-    padding-bottom: 50px;
-}
-
-.testimonial {
-    background-color: var(--light-gray);
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    padding: 20px;
-    text-align: center;
-}
-
-        
-
-        .testimonial-text {
-            margin-bottom: 15px;
-            font-style: italic;
-        }
-
-        .testimonial-author {
-            display: flex;
-            justify-content: center;
-
-        }
-
-        .author-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: var(--primary-color);
-            margin-right: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            font-weight: bold;
-        }
-
-        .author-details h4 {
-            margin-bottom: 5px;
-        }
-
-        .stars {
-            color: #FFD700;
-        }
-
-        .swiper-button-next,
-.swiper-button-prev {
-    color: var(--primary-color);
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-    font-size: 30px;
-    height: 4rem;
-    
-}
-
- 
-
-.swiper-pagination-bullet-active {
-    background: var(--primary-color);
-
-}
-        /* Service Areas */
-
-        .service-areas {
-            background-color: var(--light-gray);
-
-        }
-
-        .areas-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 30px;
-        }
-
-        .area-tag {
-            background-color: var(--primary-color);
-            color: var(--white);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            cursor: pointer;
-            
-        }
-
-        .map-container {
-            margin-top: 30px;
-            height: 300px;
-            background-color: #eee;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--dark-gray);
-        }
-
-
-        .special-offer {
-            background-color: var(--accent-color);
-            color: var(--white);
-            text-align: center;
-            padding: 15px;
-            margin-top: 30px;
-            border-radius: 8px;
-        }
-
-        /* FAQ Section */
-        .faq {
-            background-color: var(--white);
-        }
-
-        .faq-container {
-            margin-top: 40px;
-            max-width: 800px;
-            margin: 40px auto 0;
-        }
-
-        .faq-item {
-            margin-bottom: 15px;
-            border: 1px solid #e1e1e1;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .faq-question {
-            background-color: var(--light-gray);
-            padding: 15px 20px;
-            cursor: pointer;
-            font-weight: 600;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .faq-question::after {
-            content: "+";
-            font-size: 1.5rem;
-        }
-
-        .faq-answer {
-            padding: 15px 20px;
-            border-top: 1px solid #e1e1e1;
-        }
-
-        /* Contact Section */
-        .contact {
-            background-color: var(--primary-color);
-            color: var(--white);
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .contact-icon {
-            font-size: 1.5rem;
-        }
-
-        .contact-form {
-            background-color: var(--white);
-            padding: 30px;
-            border-radius: 8px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            color: var(--text-color);
-            font-weight: 600;
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 10px 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-
-        textarea.form-control {
-            resize: vertical;
-            min-height: 100px;
-        }
-
-        .btn-block {
-            display: block;
-            width: 100%;
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--dark-gray);
-            color: var(--white);
-            padding: 40px 0 20px;
-           
-        }
-       .grid{
-    
-        display: grid;
-            grid-template-columns: repeat(4, auto);
-            gap: 1rem;
-            margin: 0;
-            padding: 0;
-            margin-bottom: 2rem;
-            
-            font-size: 1rem;
-      
-       }
-        .footer-content {
-         margin-inline: 10px;
-             
-        }
-        .footer-title {
-    display: inline-block;
-    position: relative;
-    margin-bottom: 1rem;
-    color: var(--light-gray);
-    text-align: center; 
-}
-
-.footer-title::after {
-    content: "";
-    display: block;
-    width: 40px;
-    height: 3px;
-    background: var(--secondary-color);
-    margin:  auto 0; 
-}
-
-
-        .footer-links {
-            list-style-type: none;
-            white-space: nowrap;
-        }
-
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-
-        .footer-links a {
-            color: var(--light-gray);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-links a:hover {
-            color: var(--accent-color);
-        }
-        .contact-info{
-            display: flex;
-            flex-flow: nowrap;
-           line-height: 2rem;
-            
-        }
-        .contact-icon{
-            font-size: 1rem;
-        }
-        .contact-info p{
-            margin-left: -10px;
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .social-link {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-           border-bottom: 1px solid;
-            color: var(--white);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .social-link:hover {
-            background-color: var(--accent-color);
-        }
-
-        .copyright {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.9rem;
-            color:darkgray;
-        }
-       
-        
-        /* Media Queries */
-        @media (max-width: 868px) {
-            .header-container {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            .process-step:not(:last-child)::after {
-                display: none;
-            }
-
-            .process-steps {
-                gap: 30px;
-                display: flex;
-                justify-content: center;
-            }
-            
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .section-title {
-                font-size: 1.8rem;
-            }
-        }
-        /* footer secton media Queries */
-        /* Media Query for tablets (max-width: 1024px) */
-@media screen and (min-width: 1024px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        text-align: center;
+<style>
+    :root {
+        --primary-color: #0077cc;
+        --secondary-color: #004f8a;
+        --accent-color: #ff6b00;
+        --light-gray: #f8f9fa;
+        --dark-gray: #333333;
+        --text-color: #333333;
+        --white: #ffffff;
     }
 
-    .footer-content {
-        margin-inline: auto;
-    }
-
-    .contact-info {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-info p {
-        margin-left: 0;
-    }
-
-    .social-links {
-        justify-content: center;
-    }
-}
-
-/* Media Query for mobile devices (max-width: 768px) */
-@media screen and (max-width: 798px) {
-    
-    .grid {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1.5rem;
-        text-align: center;
-    }
-    .nav-links{
-        margin: auto;
-    }
-
-    .footer-content {
-        margin-inline: auto;
-    }
-
-    .footer-title::after {
-        margin: 0 auto;
-    }
-
-    .contact-info {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .social-links {
-        justify-content: center;
-    }
-
-    .social-link {
-        width: 35px;
-        height: 35px;
-    }
-}
-  /* header and footer mediQueries */
-/* Media Query for smaller mobile screens (max-width: 580px) */
-@media screen and (max-width: 580px) {
-        
-   
-    .nav-links{
-        font-size: medium;
-    }
-    .contact-header a{
-        font-size: small;
-    }
-    .logo{
-        margin: auto;
-        margin-bottom: -10px;
+    * {
+        margin: 0;
         padding: 0;
-    }
-  
-
-    .swiper-button-next::after,
-    .swiper-button-prev::after {
-        font-size: 1rem !important; 
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    
-    .grid {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1rem;
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 8rem;
     }
 
-    .footer-title {
-        font-size: 1.2rem;
+    body {
+        color: var(--text-color);
+        line-height: 1.6;
     }
 
-    .footer-links li {
-        margin-bottom: 8px;
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 
-    .social-link {
-        width: 30px;
-        height: 30px;
+    header {
+        background-color: var(--white);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .header-container a {
+        text-decoration-line: none;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        color: var(--primary-color);
+    }
+
+    .logo span {
+        color: var(--accent-color);
+    }
+
+    .contact-header {
+        display: flex;
+        gap: 15px;
+    }
+
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        margin-left: 8rem;
+        font-size: 1.4rem;
+
+
+    }
+
+    .nav-links a {
+        color: var(--primary-color);
+        font-weight: 650;
+        margin-inline: 1rem;
+        position: relative;
+    }
+
+
+    .nav-links a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background: var(--primary-color);
+        bottom: -5px;
+        left: 0px;
+        transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after {
+        width: 100%;
+
+    }
+
+    .nav-links a:hover {
+        color: var(--accent-color);
+    }
+
+    .contact-btn {
+        display: flex;
+        align-items: center;
+        padding: 8px 15px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
         font-size: 0.9rem;
     }
 
-    .copyright {
-        font-size: 0.8rem;
+    .phone-btn {
+        background-color: var(--primary-color);
+        color: var(--white);
     }
-}
 
-/* .header-headline */
-@media (max-width:768px) {
-    .header-headline{
+    .whatsapp-btn {
+        background-color: #25D366;
+        color: var(--white);
+    }
+
+    section {
+        padding: 60px 0;
+
+
+    }
+
+    .btn {
+        display: inline-block;
+        background-color: var(--accent-color);
+        color: var(--white);
+        padding: 10px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+
+    }
+
+    .btn:hover {
+        background-color: #e25a00;
+    }
+
+    .btn-secondary {
+        background-color: var(--primary-color);
+    }
+
+    .btn-secondary:hover {
+        background-color: var(--secondary-color);
+    }
+
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(rgba(0, 77, 128, 0.8), rgba(0, 77, 128, 0.9)), url('/api/placeholder/1200/600') center/cover;
+        color: var(--white);
+        text-align: center;
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        max-width: 800px;
+        margin: 0 auto 30px;
+    }
+
+    /* Why Choose Us Section */
+    .why-us {
+        background-color: var(--light-gray);
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 15px;
+        color: var(--primary-color);
+    }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+        text-align: center;
+
+    }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .feature {
+        flex: 1 1 200px;
+        max-width: 300px;
+        background-color: var(--white);
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+        transform: translateY(-5px);
+    }
+
+    .feature-icon {
+        font-size: 2.5rem;
+        color: var(--accent-color);
+        margin-bottom: 15px;
+    }
+
+    .feature h3 {
+        margin-bottom: 10px;
+        color: var(--primary-color);
+    }
+
+    /* Services Section */
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        margin-top: 40px;
+    }
+
+    .service-card {
+        border: 1px solid #e1e1e1;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-img {
+        height: 150px;
+        background-color: var(--light-gray);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        color: var(--primary-color);
+    }
+
+    .service-content {
+        padding: 20px;
+        text-align: center;
+
+    }
+
+    .service-content h3 {
+        color: var(--primary-color);
+        margin-bottom: 10px;
+    }
+
+    .service-content p {
+        margin-bottom: 15px;
+        min-height: 80px;
+    }
+
+    .service-content a {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Process Section */
+    .process {
+        background-color: var(--light-gray);
+    }
+
+    .process-steps {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        counter-reset: step-counter;
+        margin-top: 40px;
+    }
+
+    .process-step {
+        flex: 1 1 220px;
+        max-width: 250px;
+        text-align: center;
+        position: relative;
+    }
+
+    .process-step::before {
+        counter-increment: step-counter;
+        content: counter(step-counter);
+        background-color: var(--primary-color);
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 15px;
+        font-weight: bold;
+    }
+
+    .process-step:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: -62%;
+        width: 110%;
+        height: 2px;
+        background-color: var(--primary-color);
+        z-index: 0;
+    }
+
+    .step-icon {
+        font-size: 2rem;
+        color: var(--accent-color);
+        margin-bottom: 15px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .process-step h3 {
+        margin-bottom: 10px;
+        color: var(--primary-color);
+    }
+
+    /* Testimonials Section */
+
+    .testimonials {
+        background-color: var(--white);
+    }
+
+    .testimonials-slider {
+        padding-bottom: 50px;
+    }
+
+    .testimonials-slider {
+        padding-bottom: 50px;
+    }
+
+    .testimonial {
+        background-color: var(--light-gray);
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        padding: 20px;
+        text-align: center;
+    }
+
+
+
+    .testimonial-text {
+        margin-bottom: 15px;
+        font-style: italic;
+    }
+
+    .testimonial-author {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .author-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: var(--primary-color);
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+        font-weight: bold;
+    }
+
+    .author-details h4 {
+        margin-bottom: 5px;
+    }
+
+    .stars {
+        color: #FFD700;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: var(--primary-color);
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 30px;
+        height: 4rem;
+
+    }
+
+
+
+    .swiper-pagination-bullet-active {
+        background: var(--primary-color);
+
+    }
+
+    /* Service Areas */
+
+    .service-areas {
+        background-color: var(--light-gray);
+
+    }
+
+    .areas-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .area-tag {
+        background-color: var(--primary-color);
+        color: var(--white);
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        cursor: pointer;
+
+    }
+
+    .map-container {
+        margin-top: 30px;
+        height: 300px;
+        background-color: #eee;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--dark-gray);
+    }
+
+
+    .special-offer {
+        background-color: var(--accent-color);
+        color: var(--white);
+        text-align: center;
+        padding: 15px;
+        margin-top: 30px;
+        border-radius: 8px;
+    }
+
+    /* FAQ Section */
+    .faq {
+        background-color: var(--white);
+    }
+
+    .faq-container {
+        margin-top: 40px;
+        max-width: 800px;
+        margin: 40px auto 0;
+    }
+
+    .faq-item {
+        margin-bottom: 15px;
+        border: 1px solid #e1e1e1;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .faq-question {
+        background-color: var(--light-gray);
+        padding: 15px 20px;
+        cursor: pointer;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .faq-question::after {
+        content: "+";
+        font-size: 1.5rem;
+    }
+
+    .faq-answer {
+        padding: 15px 20px;
+        border-top: 1px solid #e1e1e1;
+    }
+
+    /* Contact Section */
+    .contact {
+        background-color: var(--primary-color);
+        color: var(--white);
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-icon {
+        font-size: 1.5rem;
+    }
+
+    .contact-form {
+        background-color: var(--white);
+        padding: 30px;
+        border-radius: 8px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
         display: block;
-        font-size: 1.3rem;
-        margin: -0.5rem 1rem -0.5rem;
-       
-       color: var(--text-color);
-       font-weight: 500;
+        margin-bottom: 5px;
+        color: var(--text-color);
+        font-weight: 600;
     }
-    
+
+    .form-control {
+        width: 100%;
+        padding: 10px 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    textarea.form-control {
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    .btn-block {
+        display: block;
+        width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        background-color: var(--dark-gray);
+        color: var(--white);
+        padding: 40px 0 20px;
+
+    }
+
+    .grid {
+
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 2rem;
+
+        font-size: 1rem;
+
+    }
+
+    .footer-content {
+        margin-inline: 10px;
+
+    }
+
+    .footer-title {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 1rem;
+        color: var(--light-gray);
+        text-align: center;
+    }
+
+    .footer-title::after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 3px;
+        background: var(--secondary-color);
+        margin: auto 0;
+    }
+
+
+    .footer-links {
+        list-style-type: none;
+        white-space: nowrap;
+    }
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links a {
+        color: var(--light-gray);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+        color: var(--accent-color);
+    }
+
+    .contact-info {
+        display: flex;
+        flex-flow: nowrap;
+        line-height: 2rem;
+
+    }
+
+    .contact-icon {
+        font-size: 1rem;
+    }
+
+    .contact-info p {
+        margin-left: -10px;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .social-link {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-bottom: 1px solid;
+        color: var(--white);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .social-link:hover {
+        background-color: var(--accent-color);
+    }
+
+    .copyright {
+        text-align: center;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 0.9rem;
+        color: darkgray;
+    }
+
+
+    /* Media Queries */
+    @media (max-width: 868px) {
+        .header-container {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .process-step:not(:last-child)::after {
+            display: none;
+        }
+
+        .process-steps {
+            gap: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .hero h1 {
+            font-size: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+        }
+    }
+
+    /* footer secton media Queries */
+    /* Media Query for tablets (max-width: 1024px) */
+    @media screen and (max-width: 1024px) {
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            margin-inline: auto;
+        }
+
+        .contact-info {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-info p {
+            margin-left: 0;
+        }
+
+        .social-links {
+            justify-content: center;
+        }
+    }
+
+    /* Media Query for mobile devices (max-width: 768px) */
+    @media screen and (max-width: 798px) {
+
+        .grid {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1.5rem;
+            text-align: center;
+        }
+
+        .nav-links {
+            margin: auto;
+        }
+
+        .footer-content {
+            margin-inline: auto;
+        }
+
+        .footer-title::after {
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social-links {
+            justify-content: center;
+        }
+
+        .social-link {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    /* header and footer mediQueries */
+    /* Media Query for smaller mobile screens (max-width: 580px) */
+    @media screen and (max-width: 580px) {
+
+
+        .nav-links {
+            font-size: medium;
+        }
+
+        .contact-header a {
+            font-size: small;
+        }
+
+        .logo {
+            margin: auto;
+            margin-bottom: -10px;
+            padding: 0;
+        }
+
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 1rem !important;
+        }
+
+
+        .grid {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1rem;
+        }
+
+        .footer-title {
+            font-size: 1.2rem;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .social-link {
+            width: 30px;
+            height: 30px;
+            font-size: 0.9rem;
+        }
+
+        .copyright {
+            font-size: 0.8rem;
+        }
+    }
+
+    /* .header-headline */
+    @media (max-width:768px) {
+        .header-headline {
+            display: block;
+            font-size: 1.3rem;
+            margin: -0.5rem 1rem -0.5rem;
+
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+    }
+
+    @media (min-width:768px) {
+        .header-headline {
+            display: none;
+        }
+    }
+
+
+/* Offices Section Styling */
+.offices {
+    text-align: center;
+    padding: 3rem 0;
+    background-color: #f8f9fa;
 }
 
-@media (min-width:768px) {
-    .header-headline{
-     display: none;
-    }
+.offices-header h2 {
+    font-size: 2rem;
+    color: #0077cc;
 }
-     
-    </style>
+
+.offices-header h3 {
+    font-size: 1.5rem;
+    color: #ff6b00;
+    margin-bottom: 2rem;
+}
+
+/* Office Locations Grid */
+.offices-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.office-content {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.office-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Office Image */
+.office-img img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 3px solid #0077cc;
+}
+
+/* Office Details */
+.office-place {
+    padding: 1rem;
+}
+
+.city-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.office-type {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+</style>
 </head>
 
 <body>
@@ -853,7 +934,8 @@
             </nav>
             <div class="contact-header">
                 <a href="tel:+917982127785" class="contact-btn phone-btn">📞 Call Now</a>
-                <a href="https://wa.me/917982127785?text=Hello%2C%20I%20need%20AC%20repair%20service." class="contact-btn whatsapp-btn">💬 WhatsApp</a>
+                <a href="https://wa.me/917982127785?text=Hello%2C%20I%20need%20AC%20repair%20service."
+                    class="contact-btn whatsapp-btn">💬 WhatsApp</a>
             </div>
         </div>
 
@@ -905,21 +987,21 @@
         </div>
     </section>
 
-    
-       <!-- Services Section -->
 
-       <section class="services" id="services">
+    <!-- Services Section -->
+
+    <section class="services" id="services">
         <div class="container">
             <h2 class="section-title">Our Services</h2>
             <p class="section-subtitle">Comprehensive AC solutions tailored to your specific needs</p>
-            
+
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-img">🔧</div>
                     <div class="service-content">
                         <h3>AC Repair Services</h3>
-                      <p>Expert diagnosis and fixing of all cooling issues, motor problems, and PCB repairs for all
-                               types of ACs.Get fast, reliable, and long-lasting solutions for optimal cooling comfort!</p>
+                        <p>Expert diagnosis and fixing of all cooling issues, motor problems, and PCB repairs for all
+                            types of ACs.Get fast, reliable, and long-lasting solutions for optimal cooling comfort!</p>
                         <a href="#booking" class="btn btn-secondary">Request Service</a>
                     </div>
                 </div>
@@ -956,7 +1038,7 @@
                         <h3>Emergency Services</h3>
                         <p>Fast and reliable repairs for urgent AC issues with quick response times. Stay cool with our
                             prompt expert assistance!</p>
-                    <a href="#booking" class="btn btn-secondary">Request Service</a>
+                        <a href="#booking" class="btn btn-secondary">Request Service</a>
                     </div>
                 </div>
                 <div class="service-card">
@@ -964,15 +1046,68 @@
                     <div class="service-content">
                         <h3>AC Health Check</h3>
                         <p>Comprehensive diagnostic service to identify potential issues before they become major
-                            problems.Stay worry-free!</p>        
+                            problems.Stay worry-free!</p>
                         <a href="#booking" class="btn btn-secondary">Request Service</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+<!-- Offices Section -->
+<section class="offices">
+    <div class="offices-header">
+        <h2>Office Locations</h2>
+        <h3>India</h3>
+    </div>
 
-              
+    <div class="offices-list">
+        <div class="office-content">
+            <div class="office-img">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.grXQ3mU7q4nz0c2FCkhHsAHaE5&pid=Api&P=0&h=180"
+                    alt="New Delhi Office">
+            </div>
+            <div class="office-place">
+                <p class="city-name">New Delhi</p>
+                <p class="office-type">Head Office</p>
+            </div>
+        </div>
+
+        <div class="office-content">
+            <div class="office-img">
+                <img src="https://img.freepik.com/premium-photo/gateway-india_78361-4513.jpg?ga=GA1.1.1004763821.1742538216&semt=ais_keywords_boost"
+                    alt="Mumbai Office">
+            </div>
+            <div class="office-place">
+                <p class="city-name">Mumbai</p>
+                <p class="office-type">Branch</p>
+            </div>
+        </div>
+
+        <div class="office-content">
+            <div class="office-img">
+                <img src="https://img.freepik.com/premium-photo/vidhana-soudha-bangalore_665346-48040.jpg?ga=GA1.1.1004763821.1742538216&semt=ais_keywords_boost"
+                    alt="Bangalore Office">
+            </div>
+            <div class="office-place">
+                <p class="city-name">Bangalore</p>
+                <p class="office-type">Branch</p>
+            </div>
+        </div>
+
+        <div class="office-content">
+            <div class="office-img">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.eoy8J05GbW2RtYoTypyO9QHaEW&pid=Api&P=0&h=180"
+                    alt="Kolkata Office">
+            </div>
+            <div class="office-place">
+                <p class="city-name">Kolkata</p>
+                <p class="office-type">Branch</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
     <!-- Process Section -->
     <section class="process">
         <div class="container">
@@ -1012,15 +1147,17 @@
     <section class="testimonials" id="testimonial">
         <div class="container">
             <h2 class="section-title">What Our Customers Say</h2>
-            <p class="section-subtitle">Don't just take our word for it - see what our satisfied customers have to say</p>
-    
+            <p class="section-subtitle">Don't just take our word for it - see what our satisfied customers have to say
+            </p>
+
             <!-- Swiper Container -->
             <div class="swiper testimonials-slider">
                 <div class="swiper-wrapper">
                     <!-- Testimonial 1 -->
                     <div class="swiper-slide testimonial">
                         <div class="stars">★★★★★</div>
-                        <p class="testimonial-text">"Excellent AC service! The technician was professional, and my AC works perfectly now. Highly recommended!"</p>
+                        <p class="testimonial-text">"Excellent AC service! The technician was professional, and my AC
+                            works perfectly now. Highly recommended!"</p>
                         <div class="testimonial-author">
                             <div class="author-avatar">RK</div>
                             <div class="author-details">
@@ -1032,7 +1169,8 @@
                     <!-- Testimonial 2 -->
                     <div class="swiper-slide testimonial">
                         <div class="stars">★★★★★</div>
-                        <p class="testimonial-text">"Fast service and reasonable prices. My AC wasn't cooling properly, and they fixed it in just one visit. Great job!"</p>
+                        <p class="testimonial-text">"Fast service and reasonable prices. My AC wasn't cooling properly,
+                            and they fixed it in just one visit. Great job!"</p>
                         <div class="testimonial-author">
                             <div class="author-avatar">SP</div>
                             <div class="author-details">
@@ -1044,7 +1182,8 @@
                     <!-- Testimonial 3 -->
                     <div class="swiper-slide testimonial">
                         <div class="stars">★★★★★</div>
-                        <p class="testimonial-text">"Very professional and knowledgeable team. They explained the issues clearly and fixed my AC problem at a reasonable cost."</p>
+                        <p class="testimonial-text">"Very professional and knowledgeable team. They explained the issues
+                            clearly and fixed my AC problem at a reasonable cost."</p>
                         <div class="testimonial-author">
                             <div class="author-avatar">AM</div>
                             <div class="author-details">
@@ -1056,7 +1195,8 @@
                     <!-- Testimonial 4 -->
                     <div class="swiper-slide testimonial">
                         <div class="stars">★★★★★</div>
-                        <p class="testimonial-text">"Same-day service as promised! Technician was punctual, courteous, and skilled. My AC is cooling better than ever."</p>
+                        <p class="testimonial-text">"Same-day service as promised! Technician was punctual, courteous,
+                            and skilled. My AC is cooling better than ever."</p>
                         <div class="testimonial-author">
                             <div class="author-avatar">PG</div>
                             <div class="author-details">
@@ -1066,7 +1206,7 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Swiper Pagination & Navigation -->
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-next"></div>
@@ -1074,10 +1214,10 @@
             </div>
         </div>
     </section>
-    
+
 
     <!-- Service Areas Section -->
-    <section class="service-areas" >
+    <section class="service-areas">
         <div class="container">
             <h2 class="section-title">Areas We Serve</h2>
             <p class="section-subtitle">We provide doorstep AC services in the following locations</p>
@@ -1090,16 +1230,16 @@
                 <span class="area-tag" onclick="updatemap('Central Delhi')">Central Delhi</span>
                 <span class="area-tag" onclick="updatemap('Noida')">Noida</span>
                 <span class="area-tag" onclick="updatemap('Gurgaon')">Gurgaon</span>
-                <span class="area-tag" onclick="updatemap('Faridabad')" >Faridabad</span>
-                <span class="area-tag"onclick="updatemap('Ghaziabad')">Ghaziabad</span>
-                <span class="area-tag"onclick="updatemap('Greater Noida')">Greater Noida</span>
+                <span class="area-tag" onclick="updatemap('Faridabad')">Faridabad</span>
+                <span class="area-tag" onclick="updatemap('Ghaziabad')">Ghaziabad</span>
+                <span class="area-tag" onclick="updatemap('Greater Noida')">Greater Noida</span>
             </div>
 
             <div class="map-container">
                 <!-- <p>Interactive Service Area Map</p> -->
                 <iframe id="location-btn"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111898.99431891767!2d77.01069338230265!3d28.78392519392501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfde3df564c19%3A0x9aba3d73ffcf8ba1!2sNorth%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1742415266939!5m2!1sen!2sin" ,
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111898.99431891767!2d77.01069338230265!3d28.78392519392501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfde3df564c19%3A0x9aba3d73ffcf8ba1!2sNorth%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1742415266939!5m2!1sen!2sin"
+                    , width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
@@ -1115,150 +1255,152 @@
         </div>
     </section>
 
- <!-- Footer -->
- <footer id="contact" class="footer">
-    <div class="container">
-        <div class="grid">
-            <div class="footer-content">
-                <h3 class="footer-title">ChillFix</h3>
-                <p>ChillFix offers fast, reliable, and affordable AC repair and maintenance by experienced professionals, ensuring your cooling system runs efficiently.</p>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
-                    <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="grid">
+                <div class="footer-content">
+                    <h3 class="footer-title">ChillFix</h3>
+                    <p>ChillFix offers fast, reliable, and affordable AC repair and maintenance by experienced
+                        professionals, ensuring your cooling system runs efficiently.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-content"  >
-                <h3 class="footer-title">Useful Links</h3>
-                <ul class="footer-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#testimonial">Testimonial</a></li>
-                    <li><a href="#Privacy Policy">Privacy Policy</a></li>
-                    <li><a href="#Terms and conditions">Terms and conditions</a></li>
-                </ul>
-            </div>
-            <div class="footer-content"  >
-                <h3 class="footer-title">Our Services</h3>
-                <ul class="footer-links">
-                    <li><a href="#services">AC Repair Services</a></li>
-                    <li><a href="#services">AC Installation & Uninstallation</a></li>
-                    <li><a href="#services">AC Maintenance & Cleaning</a></li>
-                    <li><a href="#services">AC Gas Refilling</a></li>
-                    <li><a href="#services">AC Health Check</a></li>
-                    <li><a href="#services">Emergency Services</a></li>
-                </ul>
-            </div>
-            <div class="footer-content"  >
-                <h3 class="footer-title">Contact Us</h3>
-                <div class="contact-info">
-                    <span class="contact-icon"><i class="bi bi-telephone"></i></span>
-                    <p style="color:#25D366;" > +91-7982127785</p>
+                <div class="footer-content">
+                    <h3 class="footer-title">Useful Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonial">Testimonial</a></li>
+                        <li><a href="#Privacy Policy">Privacy Policy</a></li>
+                        <li><a href="#Terms and conditions">Terms and conditions</a></li>
+                    </ul>
                 </div>
-                <div class="contact-info">
-                    <span class="contact-icon"><i class="bi bi-envelope ft-2"></i></span>
-                    <p>info@chillfix.com</p>
+                <div class="footer-content">
+                    <h3 class="footer-title">Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">AC Repair Services</a></li>
+                        <li><a href="#services">AC Installation & Uninstallation</a></li>
+                        <li><a href="#services">AC Maintenance & Cleaning</a></li>
+                        <li><a href="#services">AC Gas Refilling</a></li>
+                        <li><a href="#services">AC Health Check</a></li>
+                        <li><a href="#services">Emergency Services</a></li>
+                    </ul>
                 </div>
-                <div class="contact-info">
-                       <span class="contact-icon"><i class="bi bi-geo-alt"></i></span>
+                <div class="footer-content">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <div class="contact-info">
+                        <span class="contact-icon"><i class="bi bi-telephone"></i></span>
+                        <p style="color:#25D366;"> +91-7982127785</p>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-icon"><i class="bi bi-envelope ft-2"></i></span>
+                        <p>info@chillfix.com</p>
+                    </div>
+                    <div class="contact-info">
+                        <span class="contact-icon"><i class="bi bi-geo-alt"></i></span>
                         <p>Laxmi Nagar
                             Block S1, Nanakpura, Shakarpur, Delhi, 110092 India</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="copyright">
+                    <p>&copy; 2025 Air Condition Services. All Rights Reserved</p>
+
                 </div>
             </div>
         </div>
-
-        <div >
-            <div class="copyright">
-                <p>&copy; 2025 Air Condition Services. All Rights Reserved</p>
-
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 
-<script>
-    var swiper = new Swiper(".testimonials-slider", {
-        slidesPerView: 1,   // Show 1 slide at a time
-        spaceBetween: 20,   // Space between slides
-        loop: true,         // Infinite loop
-        autoplay: {
-            delay: 3000,    // Change slide every 3 seconds
-            disableOnInteraction: false
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true
-        },
-        breakpoints: {
-            768: { slidesPerView: 2 }, // Show 2 slides on tablets
-            1024: { slidesPerView: 3 } // Show 3 slides on larger screens
+    <script>
+        var swiper = new Swiper(".testimonials-slider", {
+            slidesPerView: 1,   // Show 1 slide at a time
+            spaceBetween: 20,   // Space between slides
+            loop: true,         // Infinite loop
+            autoplay: {
+                delay: 3000,    // Change slide every 3 seconds
+                disableOnInteraction: false
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 }, // Show 2 slides on tablets
+                1024: { slidesPerView: 3 } // Show 3 slides on larger screens
+            }
+        });
+
+        //  Interactive Service Area Map
+
+        var mapLocation = [
+            {
+                name: 'North Delhi',
+                src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111898.99431891767!2d77.01069338230265!3d28.78392519392501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfde3df564c19%3A0x9aba3d73ffcf8ba1!2sNorth%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1742415266939!5m2!1sen!2sin",
+
+            },
+            {
+                name: 'South Delhi',
+                src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112216.1535126961!2d77.09930642017268!3d28.48693020998122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1bd6be37ea9%3A0x9800d4b5d8530f44!2sSouth%20Delhi%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1742415657189!5m2!1sen!2sin",
+            },
+            {
+                name: 'East Delhi',
+                src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56036.74458155508!2d77.26488187983202!3d28.620873371507788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4b2b1aba405%3A0x9835af50a503b261!2sEast%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1742415788271!5m2!1sen!2sin",
+            },
+            {
+                name: 'West Delhi',
+                src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112043.33676194315!2d76.98509457678227!3d28.64910911897151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d045709693ca7%3A0x439edb221545a927!2sWest%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1742415948901!5m2!1sen!2sin",
+            },
+            {
+                name: 'Central Delhi',
+                src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130341.37152662687!2d77.15630132762146!3d28.68182210498253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5838673f89%3A0x1ac3b954f0aa8c92!2sCentral%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1742416056103!5m2!1sen!2sin",
+            },
+            {
+                name: 'Noida',
+                src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224357.50123809598!2d77.23701382068626!3d28.522102350413363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1742416258159!5m2!1sen!2sin",
+            },
+            {
+                name: 'Gurgaon',
+                src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224569.11690785276!2d76.82526905399864!3d28.422501875151813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19d582e38859%3A0x2cf5fe8e5c64b1e!2sGurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1742416457726!5m2!1sen!2sin",
+            },
+            {
+                name: 'Faridabad',
+                src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224612.23902547607!2d77.15426260059802!3d28.40216647118414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc15f5a424b1%3A0xe4f50576c850e0f2!2sFaridabad%2C%20Haryana!5e0!3m2!1sen!2sin!4v1742416542809!5m2!1sen!2sin",
+            },
+            {
+                name: 'Ghaziabad',
+                src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111989.32054451322!2d77.31262672884814!3d28.699628190784864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1bb41c50fdf%3A0xe6f06fd26a7798ba!2sGhaziabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1742416664987!5m2!1sen!2sin",
+            },
+            {
+                name: 'Greater Noida',
+                src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d157124.05742359627!2d77.40386992912717!3d28.513994721223217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea64b8f89aef%3A0xec0ccabb5317962e!2sGreater%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1742416758666!5m2!1sen!2sin",
+            }
+        ]
+        function updatemap(locationName) {
+            var x = document.getElementById('location-btn')
+            mapLocation.filter(locationDetail => {
+                if (locationName == locationDetail.name) {
+                    x.setAttribute('src', locationDetail.src)
+                }
+            })
+            console.log("i");
         }
-    });
-
-    //  Interactive Service Area Map
-         
-    var mapLocation=[
-        {
-            name:'North Delhi',
-            src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111898.99431891767!2d77.01069338230265!3d28.78392519392501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfde3df564c19%3A0x9aba3d73ffcf8ba1!2sNorth%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1742415266939!5m2!1sen!2sin" ,
-
-        },
-        {
-            name:'South Delhi',
-            src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112216.1535126961!2d77.09930642017268!3d28.48693020998122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce1bd6be37ea9%3A0x9800d4b5d8530f44!2sSouth%20Delhi%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1742415657189!5m2!1sen!2sin",
-        },
-        {
-            name:'East Delhi',
-            src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56036.74458155508!2d77.26488187983202!3d28.620873371507788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4b2b1aba405%3A0x9835af50a503b261!2sEast%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1742415788271!5m2!1sen!2sin" ,
-        },
-        {
-            name:'West Delhi',
-            src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112043.33676194315!2d76.98509457678227!3d28.64910911897151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d045709693ca7%3A0x439edb221545a927!2sWest%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1742415948901!5m2!1sen!2sin" ,
-        },
-        {
-            name:'Central Delhi',
-            src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130341.37152662687!2d77.15630132762146!3d28.68182210498253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5838673f89%3A0x1ac3b954f0aa8c92!2sCentral%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1742416056103!5m2!1sen!2sin" ,
-        },
-        {
-            name:'Noida',
-            src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224357.50123809598!2d77.23701382068626!3d28.522102350413363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1742416258159!5m2!1sen!2sin" ,
-        },
-        {
-            name:'Gurgaon',
-            src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224569.11690785276!2d76.82526905399864!3d28.422501875151813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19d582e38859%3A0x2cf5fe8e5c64b1e!2sGurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1742416457726!5m2!1sen!2sin",
-        },
-        {
-            name:'Faridabad',
-            src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224612.23902547607!2d77.15426260059802!3d28.40216647118414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdc15f5a424b1%3A0xe4f50576c850e0f2!2sFaridabad%2C%20Haryana!5e0!3m2!1sen!2sin!4v1742416542809!5m2!1sen!2sin" ,
-        },
-        {
-            name:'Ghaziabad',
-            src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111989.32054451322!2d77.31262672884814!3d28.699628190784864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1bb41c50fdf%3A0xe6f06fd26a7798ba!2sGhaziabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1742416664987!5m2!1sen!2sin" ,
-        },
-        {
-            name:'Greater Noida',
-            src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d157124.05742359627!2d77.40386992912717!3d28.513994721223217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea64b8f89aef%3A0xec0ccabb5317962e!2sGreater%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1742416758666!5m2!1sen!2sin" ,
-        }
-    ]
-    function updatemap(locationName) {
-         var x= document.getElementById('location-btn')
-        mapLocation.filter(locationDetail=>{
-        if(locationName==locationDetail.name){
-            x.setAttribute('src', locationDetail.src)
-        }
-       })
-           console.log("i");
-    }
 
 
-</script>
+    </script>
 
-    </body>
-    </html>
+</body>
+
+</html>
