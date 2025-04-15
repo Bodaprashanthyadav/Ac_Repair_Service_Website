@@ -3,7 +3,7 @@
 This is a responsive service-based website developed during my internship as a Web Developer. The project was built as per client requirements and focuses on providing a clean, accessible user experience for an AC repair service business.
 
  # 🌐 Live Website
-Vercel Deployment: https://ampexeducom.vercel.app/
+Vercel Deployment: https://ac-repair-website-lovat.vercel.app/
 Official Domain: 
 
 ## 📌 Project Overview
