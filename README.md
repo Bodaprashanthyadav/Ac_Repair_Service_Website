@@ -8,7 +8,7 @@ Official Domain: https://chillfix.in/
 
 ## 📌 Project Overview
 
-The **Chillfix -AC Repair Service Website** is designed to help users learn about the services offered, request repairs, and easily get in touch with the service provider. The layout is optimized for mobile and desktop devices to ensure a seamless user experience.
+The **Chillfix -AC Repair Service Website** is a responsive and user-friendly website developed for a real-time AC repair business. It allows users to explore services, book repair requests, and contact the service provider easily. The site is optimized for both mobile and desktop devices.
 
 ## 🛠 Tech Stack
 
